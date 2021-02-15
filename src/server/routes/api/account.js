@@ -3,15 +3,15 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     res.send([
-      {id: 1, name: 'Flavio Bogila', email: 'flagila@gmail.com'},
-      {id: 2, name: 'Alessandro Bogila', email: 'alessandro.bogila@gmail.com'}
+      {id: 1, name: 'Joao da Silva', email: 'joaodasilva@gmail.com'},
+      {id: 2, name: 'José Souza', email: 'josesouza@gmail.com'}
     ])
 });
 
 router.get('/:id', (req, res) => {
   res.send([
-    {id: 1, name: 'Flavio Bogila', email: 'flagila@gmail.com'},
-    {id: 2, name: 'Alessandro Bogila', email: 'alessandro.bogila@gmail.com'}
+    {id: 1, name: 'Joao da Silva', email: 'joaodasilva@gmail.com'},
+      {id: 2, name: 'José Souza', email: 'josesouza@gmail.com'}
   ].filter( item => item.id == req.params.id))
 });
 
